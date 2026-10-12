@@ -8,17 +8,15 @@
 </head>
 <body>
 
-    <!-- Pulsante per tornare alla Project Hub -->
     <a href="https://noskynhk.github.io/projecthub/" class="back-btn">← Torna alla GameHub</a>
 
-    <!-- Overlay e Schermata ASCII a tutto schermo -->
     <div class="caramel-overlay">
         <button id="caramel-close-btn" onclick="togglePlayMusic()">▶ Avvia / Pausa Musica</button>
         <pre id="caramel-ascii-container"></pre>
     </div>
 
-    <!-- Audio del Caramelldansen (Assicurati che il file mp3 sia nella stessa cartella o metti il link) -->
-    <audio id="caramel-song" src="https://files.catbox.moe/v9if6w.mp3" preload="auto" loop></audio>
+    <!-- Aggiunto crossorigin="anonymous" per evitare il blocco del browser -->
+    <audio id="caramel-song" src="https://files.catbox.moe/v9if6w.mp3" crossorigin="anonymous" preload="auto" loop></audio>
 
     <script src="script.js"></script>
 </body>
