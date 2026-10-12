@@ -6,8 +6,8 @@
 
 body {
     background-color: #000000;
-    color: #ff77ff;
-    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff;
+    font-family: 'JetBrains Mono', monospace, 'Courier New';
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -15,26 +15,25 @@ body {
     overflow: hidden;
 }
 
-.caramel-overlay {
+.ascii-overlay {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #000;
+    background: #000000;
 }
 
-#caramel-ascii-container {
-    font-size: 11px;          /* Aumentato per renderlo ben visibile */
-    line-height: 10px;        /* Spaziatura corretta tra le righe */
-    letter-spacing: 1px;
+#ascii-screen {
+    font-size: 6px;          /* Dimensione fitta dei caratteri per dare definizione */
+    line-height: 5px;        /* Altezza riga ravvicinata per mantenere le proporzioni */
+    letter-spacing: 0px;
     white-space: pre;
-    text-align: center;
+    text-align: left;
     user-select: none;
-    text-shadow: 0 0 12px rgba(255, 119, 255, 0.6);
 }
 
-#caramel-close-btn {
+#play-pause-btn {
     position: absolute;
     top: 25px;
     right: 25px;
@@ -51,7 +50,7 @@ body {
     transition: background 0.2s;
 }
 
-#caramel-close-btn:hover {
+#play-pause-btn:hover {
     background: #ff3377;
 }
 
