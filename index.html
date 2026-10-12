@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caramelldansen ASCII Easter Egg</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Pulsante per tornare alla Project Hub -->
+    <a href="URL_DELLA_TUA_PROJECT_HUB" class="back-btn">← Torna alla GameHub</a>
+
+    <!-- Overlay e Schermata ASCII a tutto schermo -->
+    <div class="caramel-overlay">
+        <button id="caramel-close-btn" onclick="togglePlayMusic()">▶ Avvia / Pausa Musica</button>
+        <pre id="caramel-ascii-container"></pre>
+    </div>
+
+    <!-- Audio del Caramelldansen (Assicurati che il file mp3 sia nella stessa cartella o metti il link) -->
+    <audio id="caramel-song" src="caramel-song.mp3" preload="auto" loop></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
