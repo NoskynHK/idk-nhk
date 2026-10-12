@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caramelldansen ASCII Easter Egg</title>
+    <title>ASCII Video Easter Egg</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <a href="https://noskynhk.github.io/projecthub/" class="back-btn">← Torna alla GameHub</a>
+    <!-- Torna alla GameHub -->
+    <a href="URL_DELLA_TUA_PROJECT_HUB" class="back-btn">← Torna alla GameHub</a>
 
-    <div class="caramel-overlay">
-        <button id="caramel-close-btn" onclick="togglePlayMusic()">▶ Avvia / Pausa Musica</button>
-        <pre id="caramel-ascii-container"></pre>
+    <!-- Overlay dell'Easter Egg -->
+    <div class="ascii-overlay">
+        <button id="play-pause-btn" onclick="togglePlay()">▶ Avvia / Pausa</button>
+        <!-- Schermata dove scorrerà l'ASCII in tempo reale -->
+        <pre id="ascii-screen"></pre>
     </div>
 
-    <!-- Aggiunto crossorigin="anonymous" per evitare il blocco del browser -->
-    <audio id="caramel-song" src="https://files.catbox.moe/v9if6w.mp3" crossorigin="anonymous" preload="auto" loop></audio>
+    <!-- Video sorgente nascosto e Audio sincronizzato -->
+    <video id="source-video" src="tuo-video.mp4" preload="auto" loop crossorigin="anonymous" style="display:none;"></video>
+    <audio id="source-audio" src="tua-canzone.mp3" preload="auto" loop crossorigin="anonymous"></audio>
 
     <script src="script.js"></script>
 </body>
